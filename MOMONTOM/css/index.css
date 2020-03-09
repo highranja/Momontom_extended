@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+body, html{
+    overflow: hidden;
+    position: relative;    
+    height: 100vh;
+}
+
+body, html,fieldset {
+    margin: 0;
+    padding: 0;
+    background-color:#EBECF0;
+}
+
+body, p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+}
+body.momontom{
+    background: none;
+}
+/* 웹접근성 image replace text */
+.ir_pm{
+    overflow: hidden;
+    position: absolute;
+    text-indent:-9999em;
+    font-size:0;
+    line-height: 0;
+    color:transparent;
+}
+
+div, p {
+  color: #BABECC;
+  text-shadow: 1px 1px 1px #FFF;
+}
+span{
+    color:#000;
+}
+form{
+    padding: 16px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+form i.fa{
+    margin:0 10px;
+}
+.form_wrap{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* 로그인영역 */
+#login{
+    position: absolute;
+    left:50%; top:40%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+    opacity:1;
+    transition:all .8s ease;
+}
+#login.off{
+    display: none;    
+}
+.segment {
+    padding:16px 0;
+    text-align: center;
+}
+
+button, input,fieldset {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 320px;
+    padding: 16px;
+    background-color:#EBECF0;
+    text-shadow: 1px 1px 0 #FFF;
+}
+label {   
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;    
+}
+input {
+    margin-right:8px;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px rgba(255,255,255,0.3);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+input:focus{
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+button {
+    color:#61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600; 
+}
+button:hover{
+    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+button:active{
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+button.red{
+    display: block;
+    width: 100%;
+    color:#AE1100;
+    font-weight: bold;
+}
+.error{        
+    margin:8px 0 0;
+    padding-left:16px;
+    font-size:12px;
+    line-height:1;
+    color:#AE1100;
+    box-sizing: border-box;
+}
+p.register_btn{
+    color:#262626;
+    text-align: center;
+}
+p.register_btn a{
+    color:#AE1100;
+    text-decoration: none;
+}
+
+/* 회원가입 영역 */
+#register{   
+    display: none;
+    position: absolute;
+    left:50%;
+    top:40%;   
+    
+    transform: translate(-50%,-50%);
+}
+#register.on{
+    display: block;  
+}
+#register p{
+    text-shadow:none;
+}
+#register span{
+    display: block;    
+    margin:0 0 10px;
+}
+#register .register_util{
+    text-align: center;
+}
+#register .register_util button{
+    margin:0 5px;
+    padding:10px;
+}
+#register .register_util .sign_up{
+    margin:0;
+    color:#AE1100;
+}
+
+/* MoMonTom */
+.wrap{    
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    transform:translate(-50%,100vh);
+    transition: transform .7s ease;
+}
+.wrap.on{
+    position: absolute;
+    left:50%; top:50%;
+    z-index:10;
+    transform: translate(-50%,-50%);
+}
+.wrap form{
+    margin:0 auto;
+    width: 60%;
+}
+.js-clock h1{
+    margin: 0;
+    font-size:10vw;
+    text-shadow:none;
+    color:#fff;
+}
+.greetings{  
+    margin: 0;
+    color:#fc0;;    
+    font-size:40px;
+    text-shadow:none;
+}
+.greetings,
+.js-form{
+    display: none;
+}
+.showing{
+    display: block;
+}
+
+.js-toDoList{
+    width: 100%;
+    padding:10px 0 10px 30%;
+    box-sizing: border-box;
+    /* list-style: none; */
+}
+.js-toDoList li {
+    list-style:none;
+    margin:5px 0;
+    color:#262626;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: none;
+}
+.js-toDoList button{
+    padding: 0;
+    margin-right:6px;
+    width: 30px; height: 30px;
+    /* border-radius:50%; */
+    background:#fff;
+    color:red;
+    font-size:15px;
+    line-height:30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+img.bgImage{
+    position: absolute;
+    left:0; top:0;
+    z-index:-1;
+    width: 100%;
+    animation:fadeIn 0.5s ease-in-out ;    
+}
+@media (max-width:720px){
+    img.bgImage{
+        height:100%;
+    }
+    .wrap form{        
+        width: 80%;
+    }
+}

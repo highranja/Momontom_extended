@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>MoMonTom</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="form_wrap">
+        <form id="login">
+            <fieldset>
+                <div class="segment">
+                    <h2>Sign In</h2>
+                </div>
+                
+                <label for="email">
+                    <input type="text" placeholder="Email Address"/ id="email">                
+                </label>
+    
+                <label for="pw">
+                    <input type="password" placeholder="Password"/ id="pw">                
+                </label>        
+    
+                <button class="red" type="submit"><i class="fa fa-lock" aria-hidden="true"></i>Log in</button>
+    
+                
+                <p class="register_btn">
+                    <a href="#a">회원가입</a>을 원하시면 눌러주세요.
+                </p>
+                
+            </fieldset>        
+        </form>
+        <!-- //로그인 영역 -->
+          
+        <form id="register" action="">
+            <fieldset>
+                
+                <div class="segment">
+                    <h2>Sign Up</h2>
+                </div>
+    
+                <label for="email_reg"> 
+                    <span>이메일</span>
+                    <input type="text" placeholder="Email Address"/ id="email_reg">
+                    <div class="error"></div>
+                </label>    
+                
+                <label for="pw_reg">
+                    <span>비밀번호</span>
+                    <input type="password" placeholder="Password"/ id="pw_reg">
+                    <div class="error"></div>
+                </label>     
+    
+                <label for="pw_confirm">
+                    <span>비밀번호 확인</span>
+                    <input type="password" placeholder="Confirm Password "/ id="pw_confirm">
+                    <div class="error"></div>
+                </label>     
+                
+                <div class="register_util">
+                    <button type="button" class="back"><span class="ir_pm">뒤로 가기</span><i class="fa fa-reply" aria-hidden="true"></i></button>
+                    <button type="submit" class="sign_up"><span class="sign_up">회원가입</span></button>                
+                </div>
+                
+            </fieldset>
+        </form>
+        <!-- //회원가입 영역 -->
+    </div>
+    
+    <div class="wrap">
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+
+        <form class="js-form">
+            <input type="text" placeholder="이름이 뭐에요?">
+        </form>
+
+        <h4 class="js-greetings greetings"></h4>
+        
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do">
+        </form>
+        <ul class="js-toDoList">
+
+        </ul>
+        <span class="js-date">
+
+        </span>
+    </div>
+       
+
+    <!-- 스크립트 -->
+    <script src="js/index.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/gretting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
